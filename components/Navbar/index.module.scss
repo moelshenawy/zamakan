@@ -1,0 +1,108 @@
+.sec_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  .burger_icon {
+    cursor: pointer;
+
+    border: 0.8px solid #11292f;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    border-radius: 50%;
+    transform: 0.3s ease-in-out !important;
+    min-width: inherit !important;
+
+    img {
+      margin: auto;
+    }
+  }
+
+  .logo {
+    cursor: pointer;
+    width: 77.39px;
+    height: 48.08px;
+    @media screen and (max-width: 450px) {
+      width: 37.22px;
+      height: 23px;
+      margin-right: auto;
+      margin-left: 31px;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .discover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    .search_icon {
+      cursor: pointer;
+
+      .img {
+      }
+    }
+
+    .btn_container {
+      margin-right: 35px;
+      @media screen and (max-width: 450px) {
+        margin-right: 16px;
+      }
+      button {
+        width: 154px;
+        height: 48px;
+        background-color: transparent;
+        color: #11292f;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: __Effra_7d295b, __Effra_Fallback_7d295b;
+        border-radius: 33px;
+        border: 1px solid var(--primary-dark-green, #11292f);
+        line-height: 0;
+
+        @media screen and (max-width: 450px) {
+          width: 98px;
+          height: 30px;
+          font-size: 11.27px;
+        }
+        &:hover {
+          background-color: #11292f;
+          color: #f6f8fc;
+        }
+
+        cursor: pointer;
+      }
+    }
+  }
+
+  // Groups
+  .burger_icon,
+  .search_icon {
+    cursor: pointer;
+
+    border: 0.8px solid #11292f;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    border-radius: 50%;
+    transform: 0.3s ease-in-out !important;
+    min-width: inherit !important;
+
+    @media screen and (max-width: 450px) {
+      width: 30.16px;
+      height: 30px;
+    }
+
+    img {
+      margin: auto;
+    }
+  }
+}
