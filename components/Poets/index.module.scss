@@ -1,8 +1,8 @@
 section.Poets {
   position: relative;
   z-index: 1;
-
   margin-top: 25px;
+
   .sec_container {
     margin-bottom: 34px;
     background-color: #e6ddc633;
@@ -38,8 +38,10 @@ section.Poets {
           border: 1px solid transparent;
 
           &:hover {
-            border: 1px solid var(--main-beige-color);
-            background-color: var(--main-white-color) !important;
+            @media screen and (min-width: 992px) {
+              border: 1px solid var(--main-beige-color);
+              background-color: var(--main-white-color) !important;
+            }
           }
 
           .img_container {
@@ -61,6 +63,9 @@ section.Poets {
 
           .name {
             margin-top: 12px;
+            @media screen and (max-width: 650px) {
+              margin-top: 14px;
+            }
             p {
               color: var(--main-blue-color);
               font-family: var(--effra-font);
@@ -69,12 +74,12 @@ section.Poets {
             }
           }
 
-          // @media screen and (max-width: 650px) {
-          //   width: 116.4px;
-          //   height: 47.96px;
-          //   padding: 12.98px;
-          //   font-size: 11.68px;
-          // }
+          @media screen and (max-width: 650px) {
+            width: 87px;
+            height: 110px;
+            padding: 12.98px;
+            font-size: 11.68px;
+          }
         }
       }
 

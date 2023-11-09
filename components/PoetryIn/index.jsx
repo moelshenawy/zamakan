@@ -3,6 +3,8 @@ import styles from './index.module.scss'
 import { Container, Typography } from '@mui/material'
 import { Button } from '@mui/base'
 import localFont from 'next/font/local'
+import imgs from '../../assets/constants/imgs';
+import SaudiMap from "@/components/SaudiMap";
 
 const Effra = localFont({
   src: [
@@ -30,18 +32,29 @@ const Effra = localFont({
 })
 
 const PoetryIn = () => {
+  const { smallMap } = imgs;
   const [isLoadMoreActive, setIsLoadMoreActive] = useState(false)
+
+  const [activeLand, setActiveLand] = useState(null);
+
+  const handlePClick = (landIndex) => {
+    setActiveLand(landIndex);
+  };
+
+
+
+
   return (
     <section id='PoetryIn' className={styles.PoetryIn} style={...Effra.style}>
       <Container sx={{ maxWidth: "1400px" }} maxWidth={false}>
         <div className={styles.sec_container}>
-          <div className={styles.sec_title}>
-            <Typography variant='h3'>
-              الشعر في العصر الأموي ٦٦٣-٧٥٠ م
-            </Typography>
-          </div>
 
           <div className={styles.text_container}>
+            <div className={styles.sec_title}>
+              <Typography variant='h3'>
+                الشعر في العصر الأموي ٦٦٣-٧٥٠ م
+              </Typography>
+            </div>
             <div className={styles.sec_info}>
               <Typography>
                 من أكثر عصور الشعر ازدهاراً، إذ تمازج صفاء السليقة العربية مع بيئات جديدة كالشام والعراق ومصر وخراسان مما جعل هذا الأدب يتلون بألوان هذه البيئات المتنوعة، فيثمر إبداعاً عربياً ثرياً في المقاصد والتوجهات، وكان لاهتمام الخلفاء الأمويين تأثير عظيم في تجويد الشعر..
@@ -60,7 +73,19 @@ const PoetryIn = () => {
             </div>
 
             <div className={styles.more_btn}>
-              <Button onClick={() => setIsLoadMoreActive((prev) => !prev)}>اقرأ المزيد</Button>
+              <Button onClick={() => setIsLoadMoreActive((prev) => !prev)}>
+                {isLoadMoreActive ?
+                  <>
+                    اقرأ أقل
+                  </>
+                  :
+                  <>
+                    اقرأ
+                    المزيد
+                  </>
+                }
+
+              </Button>
             </div>
 
 
@@ -69,12 +94,16 @@ const PoetryIn = () => {
                 مناطق المملكة
               </Typography>
             </div>
+          </div>
 
-
+        </div>
+        <div className={styles.map_details}>
+          <div className={styles.map_container}>
+            <SaudiMap activeLand={activeLand} />
           </div>
         </div>
       </Container>
-    </section>
+    </section >
   )
 }
 

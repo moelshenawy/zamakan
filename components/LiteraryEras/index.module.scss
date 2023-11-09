@@ -39,8 +39,10 @@ section.LiteraryEras {
           font-weight: var(--effra-re);
           margin-bottom: 30px;
           &:hover {
-            background-color: var(--main-red-color);
-            color: var(--main-white-color);
+            @media screen and (min-width: 992px) {
+              background-color: var(--main-red-color);
+              color: var(--main-white-color);
+            }
           }
 
           @media screen and (max-width: 650px) {

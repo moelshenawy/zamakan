@@ -74,8 +74,10 @@
           font-size: 11.27px;
         }
         &:hover {
-          background-color: #11292f;
-          color: #f6f8fc;
+          @media screen and (max-width: 992px) {
+            background-color: #11292f;
+            color: #f6f8fc;
+          }
         }
 
         cursor: pointer;

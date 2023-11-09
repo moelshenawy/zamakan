@@ -1,13 +1,16 @@
 section.PoetryIn {
   .sec_container {
-    .sec_title {
-      margin-bottom: 10px;
-      h3 {
-      }
-    }
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 
     .text_container {
       max-width: 501.28px;
+      .sec_title {
+        margin-bottom: 10px;
+        h3 {
+        }
+      }
       .sec_info {
         margin-bottom: 10px;
         p {
@@ -44,6 +47,20 @@ section.PoetryIn {
           &:hover {
             text-decoration: none;
           }
+        }
+      }
+    }
+    .map_details {
+      // display: flex;
+      // align-items: flex-start;
+      // justify-content: space-between;
+
+      .map_container {
+        width: 100%;
+        height: 582.07px;
+        svg {
+          width: 100% !important;
+          height: 100% !important;
         }
       }
     }

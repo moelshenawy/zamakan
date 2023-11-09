@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Inter, Tajawal } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import mapSVG from "../assets/SaudiMap.svg";
-import SaudiMap from "@/components/SaudiMap";
 import Navbar from "@/components/Navbar";
 import LiteraryEras from "@/components/LiteraryEras";
 import Poets from "@/components/Poets";
