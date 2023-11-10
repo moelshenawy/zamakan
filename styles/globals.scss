@@ -217,99 +217,138 @@ body::-webkit-scrollbar-track {
 }
 
 .land:nth-child(1) {
-  // display: none;
   transform: scale(1.02) translateX(3%) translateY(-3%) !important;
+  display: inline-block !important;
+  transition: transform 0.3s ease-in-out !important;
   &:hover {
-    transform: scale(1.02) translateX(3%) translateY(-3%) !important;
+    transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 
 .land:nth-child(2) {
   transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+  display: inline-block !important;
+  transition: transform 0.3s ease-in-out !important;
 
   &:hover {
-    transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+    transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 
 .land:nth-child(3) {
   transform: scale(1.02) translateX(3%) translateY(-5%) !important;
+  display: inline-block !important;
+  transition: transform 0.3s ease-in-out !important;
+
   &:hover {
-    transform: scale(1.02) translateX(3%) translateY(-5%) !important;
+    transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(4) {
   transform: scale(1.02) translateX(3%) translateY(-5%) !important;
+  display: inline-block !important;
+  transition: transform 0.3s ease-in-out !important;
+
   &:hover {
-    transform: scale(1.02) translateX(3%) translateY(-5%) !important;
+    transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(5) {
   transform: scale(1.02) translateX(-2%) translateY(-3%) !important;
+  display: inline-block !important;
+  transition: transform 0.3s ease-in-out !important;
+
   &:hover {
-    transform: scale(1.02) translateX(-2%) translateY(-3%) !important;
+    transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(6) {
   transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+  display: inline-block !important;
+  transition: transform 0.3s ease-in-out !important;
+
   &:hover {
-    transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+    transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(7) {
   transform: scale(1.02) translateX(3%) translateY(-3%) !important;
+  display: inline-block !important;
+  transition: transform 0.3s ease-in-out !important;
+
   &:hover {
-    transform: scale(1.02) translateX(3%) translateY(-3%) !important;
+    // transform: scale(1.02) translateX(0) translateY(-0) !important;
+    transform: scale(1) translate(-2px, -11px) !important ;
   }
 }
 .land:nth-child(8) {
   transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+  display: inline-block !important;
+  transition: transform 0.3s ease-in-out !important;
+
   &:hover {
-    transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+    transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(9) {
   transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+
+  display: inline-block !important;
+  transition: transform 0.3s ease-in-out !important;
+
   &:hover {
-    transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+    transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(10) {
   transform: scale(1.02) translateX(3%) translateY(-3%) !important;
+
+  display: inline-block !important;
+  transition: transform 0.3s ease-in-out !important;
+
   &:hover {
-    transform: scale(1.02) translateX(3%) translateY(-3%) !important;
+    transform: scale(1.2) translate(-66px, -119px) !important;
   }
 }
 .land:nth-child(11) {
   transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+  display: inline-block !important;
+  transition: transform 0.3s ease-in-out !important;
+
   &:hover {
-    transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+    transform: scale(1.02) translate(-1px, -1px) !important;
   }
 }
 .land:nth-child(12) {
   transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+  display: inline-block !important;
+  transition: transform 0.3s ease-in-out !important;
+
   &:hover {
-    transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+    transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(13) {
   transform: scale(1.02) translateX(3%) translateY(3%) !important;
+  display: inline-block !important;
+  transition: transform 0.3s ease-in-out !important;
+
   &:hover {
-    transform: scale(1.02) translateX(3%) translateY(3%) !important;
+    transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 
 .land.activeLand:nth-child(1) {
-  transform: scale(1.02) translateX(3%) translateY(-3%) !important;
+  transform: scale(1.02) translate(-1%, -2%) !important;
 }
 .land.activeLand:nth-child(2) {
-  transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+  transform: scale(1.02) translate(-1%, -2%) !important;
 }
 .land.activeLand:nth-child(3) {
-  transform: scale(1.02) translateX(3%) translateY(-5%) !important;
+  transform: scale(0.9) translate(34px, 31px) !important;
 }
 .land.activeLand:nth-child(4) {
-  transform: scale(1.02) translateX(3%) translateY(-5%) !important;
+  transform: scale(1.02) translate(-5px, -11px) !important;
 }
 .land.activeLand:nth-child(5) {
   transform: scale(1.02) translateX(-2%) translateY(-3%) !important;
@@ -333,11 +372,17 @@ body::-webkit-scrollbar-track {
   transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
 }
 .land.activeLand:nth-child(12) {
-  transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+  transform: scale(1.02) translate(-1%, -2%) !important;
 }
 .land.activeLand:nth-child(13) {
-  transform: scale(1.02) translateX(3%) translateY(3%) !important;
+  transform: scale(1.02) translate(-1%, -2%) !important;
 }
+
+// .land:not(.activeLand) {
+//   path {
+//     fill: #f0e5d9;
+//   }
+// }
 
 .land:hover,
 .land:focus {
@@ -372,15 +417,6 @@ body::-webkit-scrollbar-track {
   transform: translateX(0) translateY(0) !important; // Original position
 }
 
-.land.activeLand {
-  // transform: scale(1.05) translateY(-8px) translateX(-4px) !important;
-  transform: scale(1.02) translateX(3%) translateY(-5%) !important;
-
-  path {
-    // fill: #a09589 !important;
-  }
-}
-
 .tools {
   display: flex;
   flex-wrap: wrap;
@@ -388,11 +424,14 @@ body::-webkit-scrollbar-track {
   button {
     margin: 5px;
     padding: 12px;
-    background-color: var(--main-red-color);
-    color: var(--main-white-color);
+    background-color: var(--main-beige-color);
+    color: var(--main-blue-color);
     cursor: pointer;
     border-radius: 5px;
-    border-radius: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 22px;
   }
 }
 
@@ -466,9 +505,12 @@ body::-webkit-scrollbar-track {
   width: 695.43px !important;
   margin-top: -200px !important;
 
+  border: 1px solid var(--main-blue-color);
+  border-radius: 5px;
+
   @media screen and (max-width: 992px) {
     margin-top: 0px !important;
-    width: 90% !important;
+    width: 100% !important;
     margin-top: 24px !important;
     margin-bottom: 24px !important;
   }
