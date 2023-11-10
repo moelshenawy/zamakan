@@ -45,11 +45,11 @@ section.Poets {
           }
 
           .img_container {
-            width: 63px;
-            height: 63px;
+            width: 65px;
+            height: 65px;
             display: flex;
-            border: 8px solid var(--main-white-color);
-            border-radius: 50%;
+            border: 8px solid #ffff;
+            border-radius: 32px;
             position: relative;
             z-index: 1;
             background-color: #e6ddc633;
