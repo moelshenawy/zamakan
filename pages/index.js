@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import LiteraryEras from "@/components/LiteraryEras";
 import Poets from "@/components/Poets";
 import PoetryIn from "@/components/PoetryIn";
+import CustomSelect from "@/components/CustomSelect";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,8 @@ export default function Home() {
         <Navbar />
         <LiteraryEras />
         <Poets />
+        <CustomSelect />
+
         <PoetryIn />
       </main>
     </>
