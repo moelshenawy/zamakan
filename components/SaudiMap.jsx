@@ -120,8 +120,6 @@ const SaudiMap = () => {
               ))}
             </div>
 
-
-
             <TransformComponent>
 
               <Svg />

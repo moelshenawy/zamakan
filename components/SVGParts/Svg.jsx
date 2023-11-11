@@ -35,7 +35,7 @@ const Svg = () => {
       width="858" height="724" viewBox={viewBox} fill="none" xmlns="http://www.w3.org/2000/svg" className='saudi-map'>
 
       <GElements />
-      <Defs />
+      {/* <Defs /> */}
     </svg>
   )
 }
