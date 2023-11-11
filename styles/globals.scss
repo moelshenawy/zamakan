@@ -49,72 +49,8 @@ section {
 
 // Carosuel Styles
 #LiteraryEras,
-#Poets {
-  .rec {
-    .main_btn {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      z-index: 12;
-      width: 48px;
-      height: 48px;
-      display: flex;
-      border-radius: 50%;
-      transition: all 0.3s ease !important;
-      display: flex;
-      box-shadow: none;
-      outline: none;
-    }
-
-    .main_btn[disabled] {
-      visibility: hidden;
-    }
-  }
-
-  .rec-carousel {
-    position: relative;
-    .left_arrow,
-    .right_arrow {
-      transition: all 0.3s ease-in-out;
-      background-color: var(--main-white-color);
-      box-shadow: 0px 3px 6px #00000029;
-
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-
-      position: absolute;
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      top: 12%;
-      border: 1px solid #11292f;
-
-      &:hover {
-        @media screen and (min-width: 450px) {
-          background-color: var(--main-blue-color);
-          svg {
-            color: var(--main-white-color);
-          }
-        }
-      }
-
-      svg {
-        color: var(--main-gray-color);
-        font-size: 25px;
-        transition: all 0.3s ease-in-out;
-      }
-    }
-
-    .right_arrow {
-      right: 29px;
-    }
-    .left_arrow {
-      left: 29px;
-    }
-  }
-
+#Poets,
+#Verses {
   .rtl.react-multiple-carousel__arrow--right {
     left: 0 !important;
   }
@@ -188,6 +124,11 @@ body::-webkit-scrollbar-track {
 
 // MUI override classes
 .disable_container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.disable_container_mobile {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
