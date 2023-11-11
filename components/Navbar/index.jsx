@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './index.module.scss'
 import { CssBaseline, useScrollTrigger, Slide, AppBar, Toolbar, Button, Container } from '@mui/material';
-import imgs from '../../assets/constants/imgs'
 import { burgerIcon, Logo, Rectangle, Search } from '../../assets/svgsComponents';
 
 import localFont from 'next/font/local'
@@ -66,7 +65,6 @@ const Navbar = (props) => {
 
 
                 <div className={styles.logo}>
-                  {/* <img src={Logo.src} alt='zamakan_logo' /> */}
                   <Logo />
                 </div>
 
