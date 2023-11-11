@@ -94,7 +94,7 @@ const SaudiMap = () => {
   // "0 0 858 724"
   return (
     <div id='map-boxes' ref={containerRef}>
-      {/* <TransformWrapper
+      <TransformWrapper
         ref={transformComponentRef}
         defaultScale={1}>
         {({ zoomIn, zoomOut, resetTransform }) => (
@@ -126,17 +126,9 @@ const SaudiMap = () => {
             </TransformComponent>
           </>
         )}
-      </TransformWrapper > */}
-
-      <TransformWrapper
-        ref={transformComponentRef}
-        defaultScale={1}>
-        <TransformComponent>
-          <Svg />
-
-        </TransformComponent>
-
       </TransformWrapper >
+
+
 
     </div >
 
