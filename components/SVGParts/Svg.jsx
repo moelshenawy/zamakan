@@ -11,7 +11,7 @@ const Svg = () => {
     const handleResize = () => {
       const viewportWidth = window.innerWidth;
       if (viewportWidth <= 600) {
-        setViewBox("90 90 758 624"); // for small screens
+        setViewBox("90 70 758 624"); // for small screens
       } else if (viewportWidth <= 1200) {
         setViewBox("0 0 858 724"); // for medium screens
       } else {
@@ -31,14 +31,13 @@ const Svg = () => {
     };
   }, []);
   return (
-
     <>
 
       <svg
         width="858" height="724" viewBox={viewBox} fill="none" xmlns="http://www.w3.org/2000/svg" className='saudi-map'>
 
         <GElements />
-        {/* <Defs /> */}
+        <Defs />
       </svg>
 
 

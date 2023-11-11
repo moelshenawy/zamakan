@@ -4,6 +4,7 @@ import { CssBaseline, useScrollTrigger, Slide, AppBar, Toolbar, Button, Containe
 import { burgerIcon, Logo, Rectangle, Search } from '../../assets/svgsComponents';
 
 import localFont from 'next/font/local'
+import { useRouter } from 'next/router';
 
 const Effra = localFont({
   src: [
@@ -30,8 +31,9 @@ const Effra = localFont({
   ],
 })
 
-
 const Navbar = (props) => {
+  const router = useRouter()
+
   function HideOnScroll(props) {
     const { children, window } = props;
     const trigger = useScrollTrigger({
@@ -48,7 +50,7 @@ const Navbar = (props) => {
   return (
     <>
 
-      <main style={...Effra.style}>
+      <main style={...Effra.style} dir='rtl'>
 
         <CssBaseline />
         <HideOnScroll {...props}>
@@ -64,7 +66,7 @@ const Navbar = (props) => {
                 </Button>
 
 
-                <div className={styles.logo}>
+                <div className={styles.logo} onClick={() => router.push('/')}>
                   <Logo />
                 </div>
 

@@ -52,7 +52,10 @@ const SaudiMap = () => {
   // SVG ZOOM
   const [landElments, setLandElemnts] = useState([])
   const [activeIndex, setActiveIndex] = useState(null);
-  const [activeLand, setActiveLand] = useState();
+  const [activeLand, setActiveLand] = useState(null);
+
+  const [isPointsActive, seIsPointsActive] = useState(false);
+
 
   useEffect(() => {
     // Select all elements with the class name .land
@@ -75,23 +78,43 @@ const SaudiMap = () => {
       zoomToElement(elementId);
     }
     setActiveIndex(landIndex); // Set the active index
-
+    seIsPointsActive(false)
   };
 
 
   useEffect(() => {
     const dataIndex = document.querySelectorAll(`#land-${activeIndex}`)[0];
+    const elementsWithLandClassOnly = document.querySelectorAll('.land:not(.activeLand)');
+
     if (activeLand) {
       activeLand.classList.remove('activeLand');
+      seIsPointsActive(false)
+
+
     }
 
     if (dataIndex) {
       setActiveLand(dataIndex);
       dataIndex.classList.add('activeLand');
+      seIsPointsActive(true)
     }
+
+    if (isPointsActive === true) {
+      elementsWithLandClassOnly.forEach((element) => {
+        element.classList.add('hiddenPoints');
+      });
+    } else {
+      elementsWithLandClassOnly.forEach((element) => {
+        element.classList.remove('hiddenPoints');
+      });
+
+    }
+
   }, [activeIndex, activeLand])
 
-  // "0 0 858 724"
+
+
+
   return (
     <div id='map-boxes' ref={containerRef}>
       <TransformWrapper
@@ -104,8 +127,22 @@ const SaudiMap = () => {
               <button onClick={() => zoomIn()}>Zoom In</button>
               <button onClick={() => zoomOut()}>Zoom Out</button>
               <button onClick={() => {
+
                 resetTransform();
-                if (activeLand) activeLand.classList.remove('activeLand');
+                setActiveIndex(null);
+                setActiveLand(null);
+                seIsPointsActive(false);
+
+                landElments.forEach((element) => {
+                  element.classList.remove('activeLand', 'hiddenPoints');
+                });
+
+                // setActiveLand(null)
+                // seIsPointsActive(false)
+
+                // if (activeLand) activeLand.classList.remove('activeLand');
+                // if (activeLand) activeLand.classList.remove('hiddenPoints');
+
               }}>Reset</button>
 
               {Array.from({ length: landElments.length }).map((_, index) => (
@@ -118,6 +155,7 @@ const SaudiMap = () => {
                     <Typography>الرياض Zoom to Land {index + 1}</Typography>
                   </div>
                 </div>
+
               ))}
             </div>
 
