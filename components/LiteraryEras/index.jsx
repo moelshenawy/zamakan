@@ -1,11 +1,13 @@
 import { Container, Typography, Button } from '@mui/material'
 import React, { useState } from 'react'
 import localFont from 'next/font/local'
-import Carousel from 'react-elastic-carousel';
 import Link from 'next/link';
 import styles from './index.module.scss'
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi'
-import { consts } from 'react-elastic-carousel';
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 const Effra = localFont({
   src: [
     {
@@ -33,56 +35,43 @@ const Effra = localFont({
 
 const LiteraryEras = () => {
 
-  const [breakPoints] = useState([
-    { width: 1, itemsToShow: 3, showArrows: false },
-    { width: 300, itemsToShow: 3, showArrows: false },
-    { width: 400, itemsToShow: 3, showArrows: false },
-    { width: 500, itemsToShow: 3, showArrows: false },
-    { width: 800, itemsToShow: 3 },
-    { width: 900, itemsToShow: 3.4 },
-    { width: 1200, itemsToShow: 4.4 },
-  ])
 
 
-  // Change Arrow in react-elastic-carousel Lirbrary
-  function customArrow({ type, onClick, isEdge }) {
-    const pointer = type === consts.PREV ?
-      <div className='left_arrow'>
-        <HiChevronLeft />
-      </div>
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5.5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 5.5
+    },
+    smallScreens: {
+      breakpoint: { max: 1260, min: 1024 },
+      items: 3.5
 
-      :
-      <div className='right_arrow'>
-        <HiChevronRight />
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 3
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 360 },
+      items: 3
+    },
+    smallMobile: {
+      breakpoint: { max: 360, min: 250 },
+      items: 2.1
+    },
+    smallMobile2: {
+      breakpoint: { max: 250, min: 0 },
+      items: 1,
+    }
+  };
 
-      </div>
-
-      ;
-    return (
-      <button className='main_btn' onClick={onClick} disabled={isEdge}>
-        {pointer}
-      </button>
-    );
-  }
 
 
-  const tags = [
-    { tag: "كل العصور", link: '' },
-    { tag: "عصر ما قبل الإسلام", link: '' },
-    { tag: "العصر الإسلامي", link: '' },
-    { tag: "العصر الأموي", link: '' },
-    { tag: "العصر العباسي", link: '' },
-    { tag: "كل العصور", link: '' },
-    { tag: "عصر ما قبل الإسلام", link: '' },
-    { tag: "العصر الإسلامي", link: '' },
-    { tag: "العصر الأموي", link: '' },
-    { tag: "العصر العباسي", link: '' },
-    { tag: "كل العصور", link: '' },
-    { tag: "عصر ما قبل الإسلام", link: '' },
-    { tag: "العصر الإسلامي", link: '' },
-    { tag: "العصر الأموي", link: '' },
-    { tag: "العصر العباسي", link: '' },
-  ];
+
 
 
 
@@ -101,12 +90,7 @@ const LiteraryEras = () => {
           </Container>
 
           <div className={styles.tags_slider}>
-            <Carousel breakPoints={breakPoints}
-              pagination={false}
-              renderArrow={customArrow}
-              itemsToScroll={3}
-              transitionMs={500}
-              isRTL={true}
+            <Carousel rtl={true} responsive={responsive}
             >
 
               <Link href={"/"} className={styles}>

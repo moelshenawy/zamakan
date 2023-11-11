@@ -1,12 +1,15 @@
 import { Container, Typography, Button } from '@mui/material'
 import React, { useState } from 'react'
 import localFont from 'next/font/local'
-import Carousel from 'react-elastic-carousel';
+// import Carousel from 'react-elastic-carousel';
 import Link from 'next/link';
 import styles from './index.module.scss'
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi'
-import { consts } from 'react-elastic-carousel';
-import imgs from '../../assets/constants/imgs'
+import imgs from '../../assets/constants/imgs';
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 const Effra = localFont({
   src: [
     {
@@ -34,56 +37,37 @@ const Effra = localFont({
 
 const Poets = () => {
   const { ra3y } = imgs;
-  const [breakPoints] = useState([
-    { width: 1, itemsToShow: 4.1, showArrows: false },
-    { width: 300, itemsToShow: 4.1, showArrows: false },
-    { width: 400, itemsToShow: 4.1, showArrows: false },
-    { width: 500, itemsToShow: 4.4, showArrows: false },
-    { width: 800, itemsToShow: 4.4 },
-    { width: 900, itemsToShow: 5.5 },
-    { width: 1200, itemsToShow: 9.5 },
-  ])
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 10
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 10
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 4.5,
+      arrows: false
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 360 },
+      items: 4.5
+    },
+    smallMobile: {
+      breakpoint: { max: 360, min: 0 },
+      items: 3
+    }
+  };
 
 
-  // Change Arrow in react-elastic-carousel Lirbrary
-  function customArrow({ type, onClick, isEdge }) {
-    const pointer = type === consts.PREV ?
-      <div className='left_arrow'>
-        <HiChevronLeft />
-      </div>
-
-      :
-      <div className='right_arrow'>
-        <HiChevronRight />
-
-      </div>
-
-      ;
-    return (
-      <button className='main_btn' onClick={onClick} disabled={isEdge}>
-        {pointer}
-      </button>
-    );
-  }
 
 
-  const tags = [
-    { tag: "كل العصور", link: '' },
-    { tag: "عصر ما قبل الإسلام", link: '' },
-    { tag: "العصر الإسلامي", link: '' },
-    { tag: "العصر الأموي", link: '' },
-    { tag: "العصر العباسي", link: '' },
-    { tag: "كل العصور", link: '' },
-    { tag: "عصر ما قبل الإسلام", link: '' },
-    { tag: "العصر الإسلامي", link: '' },
-    { tag: "العصر الأموي", link: '' },
-    { tag: "العصر العباسي", link: '' },
-    { tag: "كل العصور", link: '' },
-    { tag: "عصر ما قبل الإسلام", link: '' },
-    { tag: "العصر الإسلامي", link: '' },
-    { tag: "العصر الأموي", link: '' },
-    { tag: "العصر العباسي", link: '' },
-  ];
+
+
 
   return (
     < section id='Poets' className={styles.Poets} style={...Effra.style}>
@@ -98,12 +82,25 @@ const Poets = () => {
           </Container>
 
           <div className={styles.tags_slider} id='carosuel'>
-            <Carousel breakPoints={breakPoints}
-              pagination={false}
-              renderArrow={customArrow}
-              itemsToScroll={3}
-              transitionMs={500}
-              isRTL={true}
+            <Carousel
+              draggable
+              responsive={responsive}
+              rtl={true}
+
+
+
+
+              additionalTransfrom={0}
+              arrows
+              autoPlaySpeed={3000}
+              centerMode={false}
+              focusOnSelect={false}
+              keyBoardControl
+              minimumTouchDrag={80}
+              pauseOnHover
+              renderArrowsWhenDisabled={false}
+              renderButtonGroupOutside={false}
+              renderDotsOutside={false}
             >
 
 

@@ -113,6 +113,27 @@ section {
       left: 29px;
     }
   }
+
+  .rtl.react-multiple-carousel__arrow--right {
+    left: 0 !important;
+  }
+
+  .react-multiple-carousel__arrow--left {
+    right: 0 !important;
+  }
+
+  .react-multiple-carousel__arrow--left,
+  .rtl.react-multiple-carousel__arrow--right {
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+}
+
+#LiteraryEras {
+  .react-multi-carousel-list {
+    overflow: unset !important;
+  }
 }
 
 #Poets {

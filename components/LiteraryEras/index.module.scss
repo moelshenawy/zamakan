@@ -81,14 +81,15 @@ section.LiteraryEras {
           &:before {
             content: "";
             position: absolute;
-            transform: rotate(45deg);
-
-            bottom: -59px;
+            rotate: (135deg);
+            bottom: -53px;
             left: 46%;
             width: 24.89px;
             height: 24.89px;
             border-radius: 0px, 0px, 0px, 3.56px;
-            background-color: #f6f8fc;
+            // background-color: #ffffff;
+
+            background: linear-gradient(45deg, transparent 50%, #ffffff 50%);
             border-radius: 0 0 0 3.56px;
             @media screen and (max-width: 650px) {
               bottom: -48px;

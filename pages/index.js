@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import LiteraryEras from "@/components/LiteraryEras";
 import Poets from "@/components/Poets";
 import PoetryIn from "@/components/PoetryIn";
+import CaroTest from "@/components/CaroTest";
 
 const inter = Inter({ subsets: ["latin"] });
 
