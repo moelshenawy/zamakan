@@ -31,12 +31,19 @@ const Svg = () => {
     };
   }, []);
   return (
-    <svg
-      width="858" height="724" viewBox={viewBox} fill="none" xmlns="http://www.w3.org/2000/svg" className='saudi-map'>
 
-      <GElements />
-      {/* <Defs /> */}
-    </svg>
+    <>
+
+      <svg
+        width="858" height="724" viewBox={viewBox} fill="none" xmlns="http://www.w3.org/2000/svg" className='saudi-map'>
+
+        <GElements />
+        <Defs />
+      </svg>
+
+
+
+    </>
   )
 }
 
