@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Defs from './defs'
+import Defs from './Defs'
 import { motion, useAnimation } from 'framer-motion';
 
 const Svg = () => {
