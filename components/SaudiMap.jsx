@@ -115,6 +115,7 @@ const SaudiMap = () => {
 
 
 
+  { console.log(activeIndex, "activeIndex") }
   return (
     <div id='map-boxes' ref={containerRef}>
       <TransformWrapper
@@ -144,6 +145,26 @@ const SaudiMap = () => {
                 // if (activeLand) activeLand.classList.remove('hiddenPoints');
 
               }}>Reset</button>
+
+
+              <div className={`box ${activeIndex === null ? 'active' : ''}`} onClick={() => {
+
+                resetTransform();
+                setActiveIndex(null);
+                setActiveLand(null);
+                seIsPointsActive(false);
+
+                landElments.forEach((element) => {
+                  element.classList.remove('activeLand', 'hiddenPoints');
+                });
+              }}>
+                <div className={"img_container"}>
+                  <img src={smallMap.src} alt="الرياض" />
+                </div>
+                <div className={"name"}>
+                  <Typography>المملكة</Typography>
+                </div>
+              </div>
 
               {Array.from({ length: landElments.length }).map((_, index) => (
 
