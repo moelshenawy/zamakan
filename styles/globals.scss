@@ -50,8 +50,6 @@ section {
 #LiteraryEras,
 #Poets {
   .rec {
-    // position: relative;
-
     .main_btn {
       background-color: transparent;
       border: none;
@@ -73,7 +71,6 @@ section {
   }
 
   .rec-carousel {
-    // height: 600px !important;
     position: relative;
     .left_arrow,
     .right_arrow {
@@ -107,11 +104,6 @@ section {
         font-size: 25px;
         transition: all 0.3s ease-in-out;
       }
-
-      @media screen and (max-width: 650px) {
-        // width: 30.16px;
-        // height: 30px;
-      }
     }
 
     .right_arrow {
@@ -121,29 +113,11 @@ section {
       left: 29px;
     }
   }
-
-  .gPOShF {
-    @media screen and (max-width: 450px) {
-      overflow: visible !important; /* Allow vertical overflow */
-    }
-  }
-
-  .gbbKCs {
-    @media screen and (max-width: 450px) {
-      overflow: visible !important; /* Allow vertical overflow */
-    }
-  }
 }
 
 #Poets {
   .gbbKCs {
     margin: 10px !important;
-  }
-
-  .main_btn {
-    top: 25% !important;
-  }
-  .rec {
   }
 }
 
@@ -212,8 +186,6 @@ body::-webkit-scrollbar-track {
   stroke-dasharray: none;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  position: relative;
-  z-index: 1;
 }
 
 .land:nth-child(1) {
@@ -366,7 +338,7 @@ body::-webkit-scrollbar-track {
   transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
 }
 .land.activeLand:nth-child(10) {
-  transform: scale(1.02) translateX(3%) translateY(-3%) !important;
+  transform: scale(1.2) translate(-66px, -119px) !important;
 }
 .land.activeLand:nth-child(11) {
   transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
@@ -378,27 +350,12 @@ body::-webkit-scrollbar-track {
   transform: scale(1.02) translate(-1%, -2%) !important;
 }
 
-// .land:not(.activeLand) {
-//   path {
-//     fill: #f0e5d9;
-//   }
-// }
-
 .land:hover,
 .land:focus {
   stroke-width: 0.5;
   stroke-miterlimit: 3.97446823;
 
-  // transform: scale(1.03);
-  // -webkit-transform: scale(1.03)
-
-  // transform: scale(1.02) translateX(3%) translateY(-3%);
-  // -webkit-transform: scale(1.02) translateX(3%) translateY(-3%);
   z-index: 222 !important;
-
-  g {
-    // display: none;
-  }
 }
 
 .animate:nth-child(1),
@@ -505,8 +462,10 @@ body::-webkit-scrollbar-track {
   width: 695.43px !important;
   margin-top: -200px !important;
 
-  border: 1px solid var(--main-blue-color);
-  border-radius: 5px;
+  @media screen and (max-width: 450px) {
+    border: 1px solid var(--main-blue-color);
+    border-radius: 5px;
+  }
 
   @media screen and (max-width: 992px) {
     margin-top: 0px !important;

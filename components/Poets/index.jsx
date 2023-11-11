@@ -97,7 +97,7 @@ const Poets = () => {
             </div>
           </Container>
 
-          <div className={styles.tags_slider}>
+          <div className={styles.tags_slider} id='carosuel'>
             <Carousel breakPoints={breakPoints}
               pagination={false}
               renderArrow={customArrow}

@@ -32,7 +32,6 @@ const Effra = localFont({
 })
 
 const PoetryIn = () => {
-  const { smallMap } = imgs;
   const [isLoadMoreActive, setIsLoadMoreActive] = useState(false)
 
   const [activeLand, setActiveLand] = useState(null);
