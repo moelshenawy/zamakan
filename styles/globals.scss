@@ -222,12 +222,6 @@ body::-webkit-scrollbar-track {
   }
 }
 
-defs {
-  @media screen and (min-width: 450px) {
-    display: none !important;
-  }
-}
-
 .land:nth-child(1) {
   transform: scale(1.02) translateX(3%) translateY(-3%) !important;
   display: inline-block !important;

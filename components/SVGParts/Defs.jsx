@@ -1,8 +1,12 @@
 import React from 'react'
 
 const Defs = () => {
+
+
   return (
     <>
+
+
       <defs>
         <filter id="filter0_d_678_23005" x="185.538" y="53.539" width="118.498" height="108.22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
           <feFlood flood-opacity="0" result="BackgroundImageFix" />

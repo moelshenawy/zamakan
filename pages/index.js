@@ -29,8 +29,6 @@ export default function Home() {
         <Navbar />
         <LiteraryEras />
         <Poets />
-        <CustomSelect />
-
         <PoetryIn />
       </main>
     </>
