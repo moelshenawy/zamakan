@@ -73,6 +73,29 @@ section {
     overflow: unset !important;
   }
 }
+#Verses {
+  .react-multi-carousel-track {
+    position: relative;
+  }
+
+  .react-multi-carousel-dot-list {
+    bottom: unset !important;
+    margin-top: 20px;
+    @media screen and (min-width: 992px) {
+      display: none !important;
+    }
+
+    li {
+      button {
+      }
+    }
+  }
+
+  .react-multi-carousel-dot--active button {
+    background: var(--main-blue-color) !important;
+    border-color: #bb7165 !important;
+  }
+}
 
 #Poets {
   .gbbKCs {

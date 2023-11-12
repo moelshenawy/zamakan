@@ -148,6 +148,9 @@ const Verses = () => {
                 responsive={responsive}
                 rtl={true}
                 ssr={true}
+                showDots={true}
+                renderDotsOutside={true}
+                containerClass="carousel-container"
               >
                 <div className={styles.box}>
                   <div className={styles.box_container}>

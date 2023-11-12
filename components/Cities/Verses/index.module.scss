@@ -125,8 +125,11 @@ section.Verses {
     }
 
     .slider_sec {
-      margin-top: 45px;
+      margin-top: 24px;
       margin-bottom: 50px;
+
+      @media screen and (max-width: 992px) {
+      }
 
       .box {
         display: flex;
