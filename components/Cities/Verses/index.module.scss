@@ -1,5 +1,4 @@
 section.Verses {
-  margin-top: 40px;
   .sec_container {
     display: flex;
     flex-direction: column;
@@ -121,15 +120,18 @@ section.Verses {
         }
       }
     }
+    .sec_title {
+      margin-top: 40px;
+    }
 
     .slider_sec {
       margin-top: 45px;
       margin-bottom: 50px;
-      .sec_title {
-        margin-bottom: 16px;
-      }
+
       .box {
+        display: flex;
         .box_container {
+          margin: auto;
           width: 397px;
           height: 319px;
           padding: 24px;

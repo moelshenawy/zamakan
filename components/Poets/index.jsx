@@ -87,7 +87,7 @@ const Poets = () => {
               responsive={responsive}
               rtl={true}
 
-
+              ssr={true}
 
 
               additionalTransfrom={0}

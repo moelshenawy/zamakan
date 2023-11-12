@@ -91,6 +91,8 @@ const LiteraryEras = () => {
 
           <div className={styles.tags_slider}>
             <Carousel rtl={true} responsive={responsive}
+              ssr={true}
+
             >
 
               <Link href={"/"} className={styles}>

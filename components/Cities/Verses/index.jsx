@@ -1,50 +1,55 @@
 import { Container, Typography, } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './index.module.scss'
 import { imgs } from '@/assets/constants'
 
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 const Verses = () => {
   const { ra3y } = imgs;
+
+
+
   const responsive = {
-    superLargeDesktop: {
+    superLargeDesktopp: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 3
     },
-    desktop: {
+    desktopp: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3
     },
+    superLargeDesktop2: {
+      breakpoint: { max: 1400, min: 1000 },
+      items: 2,
+    },
+    superLargeDesktop2: {
+      breakpoint: { max: 1000, min: 900 },
+      items: 2.7,
+    },
+    superLargeDesktop: {
+      breakpoint: { max: 900, min: 548 },
+      items: 2.5,
+    },
+    desktop: {
+      breakpoint: { max: 548, min: 460 },
+      items: 2,
+    },
     tablet: {
-      breakpoint: { max: 1024, min: 642 },
-      items: 2.3,
+      breakpoint: { max: 460, min: 360 },
+      items: 1.5,
     },
-
-
-    smallTablet: {
-      breakpoint: { max: 642, min: 564 },
-      items: 2.1,
-    },
-
-
-    mobile2: {
-      breakpoint: { max: 564, min: 464 },
-      items: 1.3
-    },
-
-
     mobile: {
-      breakpoint: { max: 464, min: 360 },
-      items: 1.5
-    },
-    smallMobile: {
       breakpoint: { max: 360, min: 0 },
-      items: 1.2
-    }
+      items: 1.2,
+      partialVisibilityGutter: 30
+    },
   };
+
+
+
+
   return (
     <>
       <section id='Verses' className={styles.Verses} dir='rtl' >
@@ -128,33 +133,23 @@ const Verses = () => {
             </div>
           </Container>
 
+          <Container sx={{ maxWidth: "1400px" }} maxWidth={false} >
+            <div className={styles.sec_title}>
+              <Typography variant='h3'>أبيات قيلت في وَجْرَة</Typography>
+            </div>
+
+
+          </Container>
+
           <Container sx={{ maxWidth: "1400px" }} maxWidth={false} className='disable_container_mobile'>
-            <Container sx={{ maxWidth: "1400px" }} maxWidth={false} >
-              <div className={styles.sec_title}>
-                <Typography variant='h3'>أبيات قيلت في وَجْرَة</Typography>
-              </div>
-            </Container>
+
 
             <div className={styles.slider_sec}>
               <Carousel
                 draggable
                 responsive={responsive}
                 rtl={true}
-
-
-
-
-                additionalTransfrom={0}
-                arrows
-                autoPlaySpeed={3000}
-                centerMode={false}
-                focusOnSelect={false}
-                keyBoardControl
-                minimumTouchDrag={80}
-                pauseOnHover
-                renderArrowsWhenDisabled={false}
-                renderButtonGroupOutside={false}
-                renderDotsOutside={false}
+                ssr={true}
               >
                 <div className={styles.box}>
                   <div className={styles.box_container}>
@@ -407,11 +402,12 @@ const Verses = () => {
                 </div>
               </Carousel>
             </div>
+
+
           </Container>
 
-        </div>
+        </div >
       </section >
-
 
     </>
   )

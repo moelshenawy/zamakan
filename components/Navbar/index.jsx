@@ -5,6 +5,7 @@ import { burgerIcon, Logo, Rectangle, Search } from '../../assets/svgsComponents
 
 import localFont from 'next/font/local'
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const Effra = localFont({
   src: [
@@ -32,7 +33,6 @@ const Effra = localFont({
 })
 
 const Navbar = (props) => {
-  const router = useRouter()
 
   function HideOnScroll(props) {
     const { children, window } = props;
@@ -51,8 +51,6 @@ const Navbar = (props) => {
     <>
 
       <main style={...Effra.style} dir='rtl'>
-
-        <CssBaseline />
         <HideOnScroll {...props}>
           <AppBar style={{ background: '#F6F8FC' }} >
 
@@ -66,9 +64,9 @@ const Navbar = (props) => {
                 </Button>
 
 
-                <div className={styles.logo} onClick={() => router.push('/')}>
+                <Link className={styles.logo} href={'/'}>
                   <Logo />
-                </div>
+                </Link>
 
 
                 <div className={styles.discover}>

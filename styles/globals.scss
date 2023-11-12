@@ -51,6 +51,7 @@ section {
 #LiteraryEras,
 #Poets,
 #Verses {
+  user-select: none !important;
   .rtl.react-multiple-carousel__arrow--right {
     left: 0 !important;
   }
