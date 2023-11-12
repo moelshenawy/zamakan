@@ -63,7 +63,7 @@
         color: #11292f;
         font-size: 18px;
         font-weight: 400;
-        font-family: __Effra_7d295b, __Effra_Fallback_7d295b;
+        font-family: var(--effra-font);
         border-radius: 33px;
         border: 1px solid var(--primary-dark-green, #11292f);
         line-height: 0;
@@ -74,7 +74,7 @@
           font-size: 11.27px;
         }
         &:hover {
-          @media screen and (max-width: 992px) {
+          @media screen and (min-width: 992px) {
             background-color: #11292f;
             color: #f6f8fc;
           }

@@ -51,39 +51,37 @@ const Navbar = (props) => {
     <>
 
       <main style={...Effra.style} dir='rtl'>
-        <HideOnScroll {...props}>
-          <AppBar style={{ background: '#F6F8FC' }} >
+        <AppBar style={{ background: '#F6F8FC' }} elevation={0} >
 
-            <Container sx={{ maxWidth: "1400px" }} maxWidth={false}>
-              <div className={styles.sec_container}
-              >
-                <Button className={styles.burger_icon} >
-                  <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.39014 1H17.3901M1.39014 7H17.3901M1.39014 13H17.3901" stroke="#11292F" stroke-width="2" stroke-linecap="round" />
-                  </svg>
+          <Container sx={{ maxWidth: "1400px" }} maxWidth={false}>
+            <div className={styles.sec_container}
+            >
+              <Button className={styles.burger_icon} >
+                <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.39014 1H17.3901M1.39014 7H17.3901M1.39014 13H17.3901" stroke="#11292F" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </Button>
+
+
+              <Link className={styles.logo} href={'/'}>
+                <Logo />
+              </Link>
+
+
+              <div className={styles.discover}>
+
+                <Button className={styles.search_icon}>
+                  <Search />
                 </Button>
 
-
-                <Link className={styles.logo} href={'/'}>
-                  <Logo />
-                </Link>
-
-
-                <div className={styles.discover}>
-
-                  <Button className={styles.search_icon}>
-                    <Search />
-                  </Button>
-
-                  <div className={styles.btn_container}>
-                    <Button>استكشف الشعراء</Button>
-                  </div>
+                <div className={styles.btn_container}>
+                  <Button>استكشف الشعراء</Button>
                 </div>
-
               </div>
-            </Container>
-          </AppBar>
-        </HideOnScroll>
+
+            </div>
+          </Container>
+        </AppBar>
         <Toolbar />
       </main>
     </>

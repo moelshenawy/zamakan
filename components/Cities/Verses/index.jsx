@@ -42,7 +42,7 @@ const Verses = () => {
     },
     mobile: {
       breakpoint: { max: 390, min: 0 },
-      items: 1,
+      items: 1.1,
       partialVisibilityGutter: 30
     },
   };
