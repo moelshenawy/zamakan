@@ -188,122 +188,69 @@ body::-webkit-scrollbar-track {
 }
 
 .land:nth-child(1) {
-  transform: scale(1.02) translateX(3%) translateY(-3%) !important;
-  display: inline-block !important;
-  transition: transform 0.3s ease-in-out !important;
   &:hover {
     transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 
 .land:nth-child(2) {
-  transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
-  display: inline-block !important;
-  transition: transform 0.3s ease-in-out !important;
-
   &:hover {
     transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 
 .land:nth-child(3) {
-  transform: scale(1.02) translateX(3%) translateY(-5%) !important;
-  display: inline-block !important;
-  transition: transform 0.3s ease-in-out !important;
-
   &:hover {
     transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(4) {
-  transform: scale(1.02) translateX(3%) translateY(-5%) !important;
-  display: inline-block !important;
-  transition: transform 0.3s ease-in-out !important;
-
   &:hover {
     transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(5) {
-  transform: scale(1.02) translateX(-2%) translateY(-3%) !important;
-  display: inline-block !important;
-  transition: transform 0.3s ease-in-out !important;
-
   &:hover {
     transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(6) {
-  transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
-  display: inline-block !important;
-  transition: transform 0.3s ease-in-out !important;
-
   &:hover {
     transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(7) {
-  transform: scale(1.02) translateX(3%) translateY(-3%) !important;
-  display: inline-block !important;
-  transition: transform 0.3s ease-in-out !important;
-
   &:hover {
     // transform: scale(1.02) translateX(0) translateY(-0) !important;
     transform: scale(1) translate(-2px, -11px) !important ;
   }
 }
 .land:nth-child(8) {
-  transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
-  display: inline-block !important;
-  transition: transform 0.3s ease-in-out !important;
-
   &:hover {
     transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(9) {
-  transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
-
-  display: inline-block !important;
-  transition: transform 0.3s ease-in-out !important;
-
   &:hover {
     transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(10) {
-  transform: scale(1.02) translateX(3%) translateY(-3%) !important;
-
-  display: inline-block !important;
-  transition: transform 0.3s ease-in-out !important;
-
   &:hover {
     transform: scale(1.2) translate(-66px, -119px) !important;
   }
 }
 .land:nth-child(11) {
-  transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
-  display: inline-block !important;
-  transition: transform 0.3s ease-in-out !important;
-
   &:hover {
     transform: scale(1.02) translate(-1px, -1px) !important;
   }
 }
 .land:nth-child(12) {
-  transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
-  display: inline-block !important;
-  transition: transform 0.3s ease-in-out !important;
-
   &:hover {
     transform: scale(1.02) translate(-1%, -2%) !important;
   }
 }
 .land:nth-child(13) {
-  transform: scale(1.02) translateX(3%) translateY(3%) !important;
-  display: inline-block !important;
-  transition: transform 0.3s ease-in-out !important;
-
   &:hover {
     transform: scale(1.02) translate(-1%, -2%) !important;
   }

@@ -128,12 +128,20 @@ const SaudiMap = () => {
 
 
 
-  { console.log(activeIndex, "activeIndex") }
   return (
     <div id='map-boxes' ref={containerRef}>
       <TransformWrapper
         ref={transformComponentRef}
-        defaultScale={1}>
+        initialScale={1}
+        wheel={{ wheelDisabled: true }}
+
+        minScale={0.5}
+        maxScale={2}
+        pan={{ disabled: false }}
+        zoomIn={{ step: 100 }}
+        zoomOut={{ step: 100 }}
+
+      >
         {({ zoomIn, zoomOut, resetTransform }) => (
 
           <>
