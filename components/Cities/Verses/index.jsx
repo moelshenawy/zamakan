@@ -133,17 +133,15 @@ const Verses = () => {
             </div>
           </Container>
 
-          <Container sx={{ maxWidth: "1400px" }} maxWidth={false} >
-            <div className={styles.sec_title}>
-              <Typography variant='h3'>أبيات قيلت في وَجْرَة</Typography>
-            </div>
 
-
-          </Container>
 
           <Container sx={{ maxWidth: "1400px" }} maxWidth={false} className='disable_container_mobile'>
 
-
+            <Container sx={{ maxWidth: "1400px" }} maxWidth={false} >
+              <div className={styles.sec_title}>
+                <Typography variant='h3'>أبيات قيلت في وَجْرَة</Typography>
+              </div>
+            </Container>
             <div className={styles.slider_sec}>
               <Carousel
                 draggable
