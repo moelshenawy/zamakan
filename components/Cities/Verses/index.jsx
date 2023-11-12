@@ -151,7 +151,7 @@ const Verses = () => {
                 showDots={true}
                 renderDotsOutside={true}
                 containerClass="carousel-container"
-                minimumTouchDrag={100}
+                minimumTouchDrag={10}
               >
                 <div className={styles.box}>
                   <div className={styles.box_container}>

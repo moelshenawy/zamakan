@@ -92,6 +92,7 @@ const LiteraryEras = () => {
           <div className={styles.tags_slider}>
             <Carousel rtl={true} responsive={responsive}
               ssr={true}
+              minimumTouchDrag={10}
 
             >
 

@@ -2,7 +2,6 @@ import { Container, Typography, Button } from '@mui/material'
 import React, { useState } from 'react'
 import localFont from 'next/font/local'
 // import Carousel from 'react-elastic-carousel';
-import Link from 'next/link';
 import styles from './index.module.scss'
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi'
 import imgs from '../../assets/constants/imgs';
@@ -88,7 +87,7 @@ const Poets = () => {
               rtl={true}
 
               ssr={true}
-
+              minimumTouchDrag={20}
 
               additionalTransfrom={0}
               arrows
@@ -96,7 +95,6 @@ const Poets = () => {
               centerMode={false}
               focusOnSelect={false}
               keyBoardControl
-              minimumTouchDrag={80}
               pauseOnHover
               renderArrowsWhenDisabled={false}
               renderButtonGroupOutside={false}
@@ -104,8 +102,9 @@ const Poets = () => {
             >
 
 
+              <div href={"/"} className={styles.box_container}>
 
-              <Link href={"/"} className={styles}>
+
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -115,9 +114,9 @@ const Poets = () => {
                     <Typography>الأعشى</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -127,9 +126,9 @@ const Poets = () => {
                     <Typography>الراعي</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -139,9 +138,9 @@ const Poets = () => {
                     <Typography>الطرماح بن حكيم</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -151,9 +150,9 @@ const Poets = () => {
                     <Typography>الفرزدق</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -163,9 +162,9 @@ const Poets = () => {
                     <Typography>الكميت بن زيد</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -175,10 +174,10 @@ const Poets = () => {
                     <Typography>جرير</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -188,9 +187,9 @@ const Poets = () => {
                     <Typography>جرير</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -200,9 +199,9 @@ const Poets = () => {
                     <Typography>جرير</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -212,9 +211,9 @@ const Poets = () => {
                     <Typography>جرير</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -224,9 +223,9 @@ const Poets = () => {
                     <Typography>جرير</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -236,9 +235,9 @@ const Poets = () => {
                     <Typography>جرير</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -248,9 +247,9 @@ const Poets = () => {
                     <Typography>جرير</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -260,9 +259,9 @@ const Poets = () => {
                     <Typography>جرير</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -272,8 +271,8 @@ const Poets = () => {
                     <Typography>الطرماح بن حكيم</Typography>
                   </div>
                 </div>
-              </Link>
-              <Link href={"/"} className={styles}>
+              </div>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -283,9 +282,9 @@ const Poets = () => {
                     <Typography>جميل بن معمر</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
-              <Link href={"/"} className={styles}>
+              <div href={"/"} className={styles.box_container}>
                 <div className={styles.box}>
                   <div className={styles.img_container}>
                     <img src={ra3y.src} alt="ra3y" />
@@ -295,7 +294,7 @@ const Poets = () => {
                     <Typography>عمر بن أبي ربيعة</Typography>
                   </div>
                 </div>
-              </Link>
+              </div>
 
 
             </Carousel>

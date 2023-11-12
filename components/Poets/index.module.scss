@@ -2,6 +2,7 @@ section.Poets {
   position: relative;
   z-index: 1;
   margin-top: 25px;
+  user-select: none !important;
 
   .sec_container {
     margin-bottom: 34px;
@@ -23,12 +24,14 @@ section.Poets {
     }
 
     .tags_slider {
-      a {
+      .box_container {
         width: 120px;
         height: 141px;
+        user-select: none !important;
 
         .box {
           transition: all 0.3s ease-in-out;
+          user-select: none !important;
 
           display: flex;
           flex-direction: column;
