@@ -30,11 +30,11 @@ const Verses = () => {
     },
     superLargeDesktop: {
       breakpoint: { max: 900, min: 548 },
-      items: 2.5,
+      items: 2.1,
     },
     desktop: {
       breakpoint: { max: 548, min: 460 },
-      items: 2,
+      items: 1.8,
     },
     tablet: {
       breakpoint: { max: 460, min: 360 },
@@ -42,7 +42,7 @@ const Verses = () => {
     },
     mobile: {
       breakpoint: { max: 360, min: 0 },
-      items: 1.2,
+      items: 1,
       partialVisibilityGutter: 30
     },
   };
