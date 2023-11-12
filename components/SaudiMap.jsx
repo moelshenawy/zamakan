@@ -4,7 +4,6 @@ import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import imgs from '../assets/constants/imgs';
 import { Typography } from '@mui/material';
 import Svg from './SVGParts/Svg';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 const SaudiMap = () => {

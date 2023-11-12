@@ -1,8 +1,7 @@
 import { Container, Typography } from '@mui/material'
-import Image from 'next/image'
 import React from 'react'
-import { imgs } from '@/assets/constants';
 import styles from './index.module.scss'
+import imgs from '../../../assets/constants/imgs'
 const PageHeader = () => {
 
   const { backgroundCity } = imgs;
@@ -26,7 +25,7 @@ const PageHeader = () => {
               </ul>
             </div>
             <div className={styles.img_box}>
-              <Image src={backgroundCity} width={434} height={161} />
+              <img src={backgroundCity.src} />
             </div>
           </div>
 
