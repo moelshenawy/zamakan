@@ -30,7 +30,10 @@ const Verses = () => {
     },
 
 
-
+    mobile2: {
+      breakpoint: { max: 564, min: 464 },
+      items: 1.3
+    },
 
 
     mobile: {
@@ -39,7 +42,7 @@ const Verses = () => {
     },
     smallMobile: {
       breakpoint: { max: 360, min: 0 },
-      items: 1
+      items: 1.2
     }
   };
   return (
@@ -126,10 +129,13 @@ const Verses = () => {
           </Container>
 
           <Container sx={{ maxWidth: "1400px" }} maxWidth={false} className='disable_container_mobile'>
-            <div className={styles.slider_sec}>
+            <Container sx={{ maxWidth: "1400px" }} maxWidth={false} >
               <div className={styles.sec_title}>
                 <Typography variant='h3'>أبيات قيلت في وَجْرَة</Typography>
               </div>
+            </Container>
+
+            <div className={styles.slider_sec}>
               <Carousel
                 draggable
                 responsive={responsive}

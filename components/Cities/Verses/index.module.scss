@@ -36,6 +36,7 @@ section.Verses {
           grid-column-gap: 10px;
           grid-row-gap: 20px;
           grid-auto-flow: dense;
+          overflow: hidden;
         }
 
         @media screen and (max-width: 992px) {
@@ -74,19 +75,14 @@ section.Verses {
           &:not(:last-child) {
             @media screen and (max-width: 992px) {
               padding-bottom: 16px !important;
-              overflow: hidden;
               &:after {
                 content: "";
                 position: absolute;
                 bottom: 0;
                 left: 0;
                 background: #e5e6f2;
-                width: 105%;
+                width: 116%;
                 height: 2px;
-
-                @media screen and (max-width: 450px) {
-                  display: none;
-                }
               }
             }
           }

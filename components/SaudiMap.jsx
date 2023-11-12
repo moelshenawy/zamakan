@@ -5,18 +5,31 @@ import imgs from '../assets/constants/imgs';
 import { Typography } from '@mui/material';
 import Svg from './SVGParts/Svg';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 const SaudiMap = () => {
   const { smallMap, SaudiMap } = imgs;
 
-
+  const router = useRouter();
 
 
   const containerRef = useRef(null);
+  const handleClick = () => {
+    // Navigate to the specified route
+    router.push('/city');
+  };
+
+
 
   useEffect(() => {
     const elements = document.querySelectorAll('.land');
     const container = containerRef.current;
+
+    elements.forEach((element) => {
+      element.addEventListener('click', () => {
+        handleClick();
+      });
+    });
 
     const observer = new IntersectionObserver(
       (entries) => {
