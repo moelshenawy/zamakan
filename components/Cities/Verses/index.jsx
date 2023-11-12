@@ -37,11 +37,11 @@ const Verses = () => {
       items: 1.8,
     },
     tablet: {
-      breakpoint: { max: 460, min: 360 },
+      breakpoint: { max: 460, min: 400 },
       items: 1.5,
     },
     mobile: {
-      breakpoint: { max: 360, min: 0 },
+      breakpoint: { max: 390, min: 0 },
       items: 1,
       partialVisibilityGutter: 30
     },
