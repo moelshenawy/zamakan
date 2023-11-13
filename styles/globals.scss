@@ -549,7 +549,9 @@ foreignObject {
   position: absolute;
   height: 10.33px;
   width: 29.22px;
+  top: 0;
 }
+
 #map {
   width: 100%;
   height: 100%;
@@ -558,95 +560,4 @@ foreignObject {
   -o-transition: transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
-}
-
-#control {
-  direction: rtl;
-  text-align: right;
-  float: right;
-  position: absolute;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: right;
-  -ms-flex-pack: right;
-  justify-content: right;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
-}
-
-#addplace,
-#editplace,
-#name,
-#x,
-#y,
-#finish,
-#remove {
-  margin: 10px;
-  padding: 5px;
-  border-radius: 5px;
-  border: none;
-  background-color: #4caf50;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-}
-#remove {
-  background-color: #ff0000;
-}
-
-#addplace:hover,
-#editplace:hover,
-#finish:hover {
-  background-color: #3e8e41;
-}
-
-#name,
-#x,
-#y {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  resize: none;
-  color: #000;
-}
-
-#name:focus,
-#x:focus,
-#y:focus {
-  outline: none;
-  border: 2px solid #4caf50;
-}
-
-#adder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#name,
-#x,
-#y {
-  margin-right: 10px;
 }
