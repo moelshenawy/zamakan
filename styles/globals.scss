@@ -103,10 +103,6 @@ section {
   }
 }
 
-#Poets .rec .main_btn {
-  top: 25% !important;
-}
-
 // global scrollbar
 body {
   scrollbar-width: thin;
@@ -524,12 +520,12 @@ body::-webkit-scrollbar-track {
 //   transform: translateX(0) translateY(0) !important;
 // }
 
-// foreignObject {
-//   overflow: unset !important;
-// }
-// .city-container {
-//   overflow: unset !important;
-// }
+foreignObject {
+  overflow: unset !important;
+}
+.city-container {
+  overflow: unset !important;
+}
 .city-name {
   background: #fff;
   color: #bb7165;

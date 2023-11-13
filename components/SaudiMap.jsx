@@ -203,7 +203,10 @@ const SaudiMap = () => {
               </div>
 
               <TransformComponent>
-                <Svg />
+                <div id='map'>
+                  <Svg />
+
+                </div>
               </TransformComponent>
             </>
           )}
