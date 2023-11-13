@@ -243,33 +243,20 @@ body::-webkit-scrollbar-track {
 }
 
 .react-transform-wrapper {
-  width: 695.43px !important;
-  height: 100% !important;
+  // width: 695.43px !important;
+  // height: 100% !important;
   margin-top: -200px !important;
 
   @media screen and (max-width: 450px) {
     border: 1px solid var(--main-blue-color);
     border-radius: 5px;
-    width: 100% !important;
   }
 
   @media screen and (max-width: 992px) {
     margin-top: 0px !important;
-    width: 100% !important;
-    margin-top: 24px !important;
-    margin-bottom: 24px !important;
-  }
-
-  #svg1 {
-    width: 100% !important;
-    height: 100% !important;
-  }
-}
-
-.svg-container {
-  width: 695.43px;
-  @media screen and (max-width: 450px) {
-    width: 100% !important;
+    // width: 100% !important;
+    // margin-top: 24px !important;
+    // margin-bottom: 24px !important;
   }
 
   #svg1 {
@@ -537,12 +524,12 @@ body::-webkit-scrollbar-track {
 //   transform: translateX(0) translateY(0) !important;
 // }
 
-foreignObject {
-  overflow: unset !important;
-}
-.city-container {
-  overflow: unset !important;
-}
+// foreignObject {
+//   overflow: unset !important;
+// }
+// .city-container {
+//   overflow: unset !important;
+// }
 .city-name {
   background: #fff;
   color: #bb7165;
@@ -567,10 +554,12 @@ foreignObject {
   font-family: var(--effra-font) !important;
 }
 
-.city-name svg {
-  top: 94%;
-  position: absolute;
-  height: 10.33px;
-  width: 29.22px;
-  top: 0;
+.city-name {
+  svg {
+    top: 94%;
+    position: absolute;
+    height: 10.33px;
+    width: 29.22px;
+    top: 0;
+  }
 }

@@ -35,9 +35,7 @@ const Static = () => {
           height: 100%;
           transition: transform 0.5s;
         }
-        #svg1-static{
-          width: 100% !important;
-              }
+    
 
           #control {
             direction: rtl;
