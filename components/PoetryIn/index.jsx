@@ -96,11 +96,8 @@ const PoetryIn = () => {
           </div>
 
         </div>
-        <div className={styles.map_details}>
-          <div className={styles.map_container}>
-            <SaudiMap activeLand={activeLand} />
-          </div>
-        </div>
+        <SaudiMap activeLand={activeLand} />
+
 
 
       </Container>

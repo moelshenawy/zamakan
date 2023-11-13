@@ -1,5 +1,4 @@
 import React from 'react'
-import GElementsP1 from './GElementsP1'
 
 const GElements = () => {
   return (
