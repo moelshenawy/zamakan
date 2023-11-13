@@ -608,12 +608,10 @@ foreignObject {
   font-family: var(--effra-font) !important;
 }
 
-.city-name {
-  svg {
-    top: 94%;
-    position: absolute;
-    height: 10.33px;
-    width: 29.22px;
-    top: 0;
-  }
+.city-name svg {
+  top: 94% !important;
+  position: absolute;
+  height: 10.33px;
+  width: 29.22px;
+  top: 0;
 }
