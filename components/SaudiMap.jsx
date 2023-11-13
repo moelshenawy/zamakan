@@ -128,90 +128,92 @@ const SaudiMap = () => {
 
 
   return (
-    <div id='map-boxes' ref={containerRef}>
-      <TransformWrapper
-        ref={transformComponentRef}
-        initialScale={1}
-        wheel={{ wheelDisabled: true }}
+    <>
 
-        minScale={0.5}
-        maxScale={2}
-        pan={{ disabled: false }}
-        zoomIn={{ step: 100 }}
-        zoomOut={{ step: 100 }}
+      <div id='map-boxes' ref={containerRef}>
+        <TransformWrapper
+          ref={transformComponentRef}
+          initialScale={1}
+          wheel={{ wheelDisabled: true }}
 
-      >
-        {({ zoomIn, zoomOut, resetTransform }) => (
+          minScale={0.5}
+          maxScale={2}
+          pan={{ disabled: false }}
+          zoomIn={{ step: 100 }}
+          zoomOut={{ step: 100 }}
 
-          <>
-            <div className="tools">
-              <button onClick={() => zoomIn()}>Zoom In</button>
-              <button onClick={() => zoomOut()}>Zoom Out</button>
-              <button onClick={() => {
+        >
+          {({ zoomIn, zoomOut, resetTransform }) => (
 
-                resetTransform();
-                setActiveIndex(null);
-                setActiveLand(null);
-                seIsPointsActive(false);
+            <>
+              <div className="tools">
+                <button onClick={() => zoomIn()}>Zoom In</button>
+                <button onClick={() => zoomOut()}>Zoom Out</button>
+                <button onClick={() => {
 
-                landElments.forEach((element) => {
-                  element.classList.remove('activeLand', 'hiddenPoints');
-                });
+                  resetTransform();
+                  setActiveIndex(null);
+                  setActiveLand(null);
+                  seIsPointsActive(false);
 
-                // setActiveLand(null)
-                // seIsPointsActive(false)
+                  landElments.forEach((element) => {
+                    element.classList.remove('activeLand', 'hiddenPoints');
+                  });
 
-                // if (activeLand) activeLand.classList.remove('activeLand');
-                // if (activeLand) activeLand.classList.remove('hiddenPoints');
+                  // setActiveLand(null)
+                  // seIsPointsActive(false)
 
-              }}>Reset</button>
+                  // if (activeLand) activeLand.classList.remove('activeLand');
+                  // if (activeLand) activeLand.classList.remove('hiddenPoints');
+
+                }}>Reset</button>
 
 
-              <div className={`box ${activeIndex === null ? 'active' : ''}`} onClick={() => {
+                <div className={`box ${activeIndex === null ? 'active' : ''}`} onClick={() => {
 
-                resetTransform();
-                setActiveIndex(null);
-                setActiveLand(null);
-                seIsPointsActive(false);
+                  resetTransform();
+                  setActiveIndex(null);
+                  setActiveLand(null);
+                  seIsPointsActive(false);
 
-                landElments.forEach((element) => {
-                  element.classList.remove('activeLand', 'hiddenPoints');
-                });
-              }}>
-                <div className={"img_container"}>
-                  <img src={smallMap.src} alt="الرياض" />
-                </div>
-                <div className={"name"}>
-                  <Typography>المملكة</Typography>
-                </div>
-              </div>
-
-              {Array.from({ length: landElments.length }).map((_, index) => (
-
-                <div className={`box ${index === activeIndex ? 'active' : ''}`} key={index} onClick={() => handleZoomToLand(index)}>
+                  landElments.forEach((element) => {
+                    element.classList.remove('activeLand', 'hiddenPoints');
+                  });
+                }}>
                   <div className={"img_container"}>
                     <img src={smallMap.src} alt="الرياض" />
                   </div>
                   <div className={"name"}>
-                    <Typography>الرياض Zoom to Land {index + 1}</Typography>
+                    <Typography>المملكة</Typography>
                   </div>
                 </div>
 
-              ))}
-            </div>
+                {Array.from({ length: landElments.length }).map((_, index) => (
 
-            <TransformComponent>
-              <Svg />
-            </TransformComponent>
-          </>
-        )}
-      </TransformWrapper >
+                  <div className={`box ${index === activeIndex ? 'active' : ''}`} key={index} onClick={() => handleZoomToLand(index)}>
+                    <div className={"img_container"}>
+                      <img src={smallMap.src} alt="الرياض" />
+                    </div>
+                    <div className={"name"}>
+                      <Typography>الرياض Zoom to Land {index + 1}</Typography>
+                    </div>
+                  </div>
 
-      <Svg />
+                ))}
+              </div>
+
+              <TransformComponent>
+                <Svg />
+              </TransformComponent>
+            </>
+          )}
+        </TransformWrapper >
 
 
-    </div >
 
+      </div >
+
+    </>
 
 
   )

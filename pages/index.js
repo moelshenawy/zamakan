@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import LiteraryEras from "@/components/LiteraryEras";
 import Poets from "@/components/Poets";
 import PoetryIn from "@/components/PoetryIn";
+import Svg from "@/components/SVGParts/Svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,8 @@ export default function Home() {
         <LiteraryEras />
         <Poets />
         <PoetryIn />
+
+        <Svg />
       </main>
     </>
   );
