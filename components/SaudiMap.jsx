@@ -21,7 +21,7 @@ const SaudiMap = () => {
 
 
   useEffect(() => {
-    const elements = document.querySelectorAll('.land');
+    const elements = document.querySelectorAll('.city-name');
     const container = containerRef.current;
 
     elements.forEach((element) => {

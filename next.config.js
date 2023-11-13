@@ -1,17 +1,6 @@
-const withTm = require("next-transpile-modules")([
-  "@ionic/react",
-  "@ionic/core",
-  "@stencil/core",
-  "ionicons",
-]);
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  images: {
-    unoptimized: true,
-  },
 
   typescript: {
     // !! WARN !!
@@ -20,7 +9,6 @@ const nextConfig = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
-  distDir: "build",
 };
 
-module.exports = withTm(nextConfig);
+module.exports = nextConfig;
