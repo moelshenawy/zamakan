@@ -37,7 +37,6 @@ const Static = () => {
         }
         #svg1-static{
           width: 100% !important;
-          height: 100% !important;
               }
 
           #control {

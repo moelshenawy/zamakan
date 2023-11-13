@@ -30,11 +30,9 @@ export default function Home() {
         <LiteraryEras />
         <Poets />
         <PoetryIn />
-        <Container sx={{ maxWidth: "1400px" }} maxWidth={false}>
-          <div className="svg-container">
-            <Svg />
-          </div>
-        </Container>
+        <div className="svg-container">
+          <Svg />
+        </div>
       </main>
     </>
   );
