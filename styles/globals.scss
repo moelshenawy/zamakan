@@ -291,7 +291,7 @@ body::-webkit-scrollbar-track {
 }
 
 .land {
-  stroke-dasharray: none;
+  // stroke-dasharray: none;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -350,81 +350,113 @@ body::-webkit-scrollbar-track {
 }
 
 .land:nth-child(3) {
-  &:hover {
-    -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
-    -ms-transform: scale(1.02) translate(-1%, -2%) !important;
-    transform: scale(1.02) translate(-1%, -2%) !important;
+  @media screen and (min-width: 500px) {
+    &:hover {
+      -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
+      -ms-transform: scale(1.02) translate(-1%, -2%) !important;
+      transform: scale(1.02) translate(-1%, -2%) !important;
+    }
   }
 }
 .land:nth-child(4) {
-  &:hover {
-    -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
-    -ms-transform: scale(1.02) translate(-1%, -2%) !important;
-    transform: scale(1.02) translate(-1%, -2%) !important;
+  @media screen and (min-width: 500px) {
+    &:hover {
+      -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
+      -ms-transform: scale(1.02) translate(-1%, -2%) !important;
+
+      transform: scale(1.02) translate(-1%, -2%) !important;
+    }
   }
 }
 .land:nth-child(5) {
-  &:hover {
-    -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
-    -ms-transform: scale(1.02) translate(-1%, -2%) !important;
-    transform: scale(1.02) translate(-1%, -2%) !important;
+  @media screen and (min-width: 500px) {
+    &:hover {
+      -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
+      -ms-transform: scale(1.02) translate(-1%, -2%) !important;
+
+      transform: scale(1.02) translate(-1%, -2%) !important;
+    }
   }
 }
 .land:nth-child(6) {
-  &:hover {
-    -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
-    -ms-transform: scale(1.02) translate(-1%, -2%) !important;
-    transform: scale(1.02) translate(-1%, -2%) !important;
+  @media screen and (min-width: 500px) {
+    &:hover {
+      -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
+      -ms-transform: scale(1.02) translate(-1%, -2%) !important;
+
+      transform: scale(1.02) translate(-1%, -2%) !important;
+    }
   }
 }
 .land:nth-child(7) {
-  &:hover {
-    // transform: scale(1.02) translateX(0) translateY(-0) !important;
-    -webkit-transform: scale(1) translate(-2px, -11px) !important ;
-    -ms-transform: scale(1) translate(-2px, -11px) !important ;
-    transform: scale(1) translate(-2px, -11px) !important ;
+  @media screen and (min-width: 500px) {
+    &:hover {
+      // transform: scale(1.02) translateX(0) translateY(-0) !important;
+      -webkit-transform: scale(1) translate(-2px, -11px) !important ;
+
+      -ms-transform: scale(1) translate(-2px, -11px) !important ;
+      transform: scale(1) translate(-2px, -11px) !important ;
+    }
   }
 }
 .land:nth-child(8) {
-  &:hover {
-    -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
-    -ms-transform: scale(1.02) translate(-1%, -2%) !important;
-    transform: scale(1.02) translate(-1%, -2%) !important;
+  @media screen and (min-width: 500px) {
+    &:hover {
+      -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
+      -ms-transform: scale(1.02) translate(-1%, -2%) !important;
+
+      transform: scale(1.02) translate(-1%, -2%) !important;
+    }
   }
 }
 .land:nth-child(9) {
-  &:hover {
-    -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
-    -ms-transform: scale(1.02) translate(-1%, -2%) !important;
-    transform: scale(1.02) translate(-1%, -2%) !important;
+  @media screen and (min-width: 500px) {
+    &:hover {
+      -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
+      -ms-transform: scale(1.02) translate(-1%, -2%) !important;
+
+      transform: scale(1.02) translate(-1%, -2%) !important;
+    }
   }
 }
 .land:nth-child(10) {
-  &:hover {
-    -webkit-transform: scale(1.02) translate(-7px, -14px) !important;
-    -ms-transform: scale(1.02) translate(-7px, -14px) !important;
-    transform: scale(1.02) translate(-7px, -14px) !important;
+  @media screen and (min-width: 500px) {
+    &:hover {
+      -webkit-transform: scale(1.02) translate(-7px, -14px) !important;
+      -ms-transform: scale(1.02) translate(-7px, -14px) !important;
+
+      transform: scale(1.02) translate(-7px, -14px) !important;
+    }
   }
 }
 .land:nth-child(11) {
-  &:hover {
-    -webkit-transform: scale(1.02) translate(-1px, -1px) !important;
-    -ms-transform: scale(1.02) translate(-1px, -1px) !important;
-    transform: scale(1.02) translate(-1px, -1px) !important;
+  @media screen and (min-width: 500px) {
+    &:hover {
+      -webkit-transform: scale(1.02) translate(-1px, -1px) !important;
+      -ms-transform: scale(1.02) translate(-1px, -1px) !important;
+
+      transform: scale(1.02) translate(-1px, -1px) !important;
+    }
   }
 }
 .land:nth-child(12) {
-  &:hover {
-    -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
-    -ms-transform: scale(1.02) translate(-1%, -2%) !important;
-    transform: scale(1.02) translate(-1%, -2%) !important;
+  @media screen and (min-width: 500px) {
+    &:hover {
+      -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
+      -ms-transform: scale(1.02) translate(-1%, -2%) !important;
+
+      transform: scale(1.02) translate(-1%, -2%) !important;
+    }
   }
 }
 .land:nth-child(13) {
-  &:hover {
-    -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
-    -ms-transform: scale(1.02) translate(-1%, -2%) !important;
-    transform: scale(1.02) translate(-1%, -2%) !important;
+  @media screen and (min-width: 500px) {
+    &:hover {
+      -webkit-transform: scale(1.02) translate(-1%, -2%) !important;
+      -ms-transform: scale(1.02) translate(-1%, -2%) !important;
+
+      transform: scale(1.02) translate(-1%, -2%) !important;
+    }
   }
 }
 
