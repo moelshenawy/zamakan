@@ -7,6 +7,7 @@ import LiteraryEras from "@/components/LiteraryEras";
 import Poets from "@/components/Poets";
 import PoetryIn from "@/components/PoetryIn";
 import Svg from "@/components/SVGParts/Svg";
+import { Container } from "@mui/material";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,8 +30,11 @@ export default function Home() {
         <LiteraryEras />
         <Poets />
         <PoetryIn />
-
-        <Svg />
+        <Container sx={{ maxWidth: "1400px" }} maxWidth={false}>
+          <div className="svg-container">
+            <Svg />
+          </div>
+        </Container>
       </main>
     </>
   );
