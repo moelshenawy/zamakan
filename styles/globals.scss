@@ -244,11 +244,13 @@ body::-webkit-scrollbar-track {
 
 .react-transform-wrapper {
   width: 695.43px !important;
+  height: 100% !important;
   margin-top: -200px !important;
 
   @media screen and (max-width: 450px) {
     border: 1px solid var(--main-blue-color);
     border-radius: 5px;
+    width: 100% !important;
   }
 
   @media screen and (max-width: 992px) {
@@ -260,6 +262,7 @@ body::-webkit-scrollbar-track {
 
   #svg1 {
     width: 100% !important;
+    height: 100% !important;
   }
 }
 
