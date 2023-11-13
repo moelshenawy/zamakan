@@ -159,21 +159,31 @@ body::-webkit-scrollbar-track {
 
 // Map styles
 
-.hover-effect {
-  transition: transform 0.3s ease-in-out; /* Adjust the duration and easing as needed */
+.city-name {
+  transition: transform 0.3s ease-in-out;
   z-index: auto;
   cursor: pointer;
   opacity: 1;
 }
-.hover-effect:hover {
-  transform: translateY(-5px); /* Adjust the desired vertical translation */
-  z-index: 1;
+.city-name:hover {
+  transform: translateY(
+    -5px
+  ) !important; /* Adjust the desired vertical translation */
 }
 
 .land {
   stroke-dasharray: none;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+  path {
+    transition: all 0.5s ease-in-out;
+  }
+}
+.land.activeLand {
+  path {
+    stroke-width: 2 !important;
+    stroke: #ffffff !important;
+  }
 }
 
 .hiddenPoints {
@@ -182,11 +192,22 @@ body::-webkit-scrollbar-track {
       display: none !important;
     }
   }
-  .hover-effect {
+  .city-name {
     opacity: 0 !important;
   }
 }
 
+.land {
+  path {
+    transition: stroke 0.5s ease-in-out !important;
+  }
+  &:hover {
+    path {
+      stroke-width: 2 !important;
+      stroke: #ffffff !important;
+    }
+  }
+}
 .land:nth-child(1) {
   &:hover {
     transform: scale(1.02) translate(-1%, -2%) !important;
@@ -237,7 +258,7 @@ body::-webkit-scrollbar-track {
 }
 .land:nth-child(10) {
   &:hover {
-    transform: scale(1.2) translate(-66px, -119px) !important;
+    transform: scale(1.02) translate(-7px, -14px) !important;
   }
 }
 .land:nth-child(11) {
@@ -263,31 +284,32 @@ body::-webkit-scrollbar-track {
   transform: scale(1.02) translate(-1%, -2%) !important;
 }
 .land.activeLand:nth-child(3) {
-  transform: scale(0.9) translate(34px, 31px) !important;
+  // transform: scale(0.9) translate(34px, 31px) !important;
+  transform: scale(1.02) translate(-6px, -11px) !important;
 }
 .land.activeLand:nth-child(4) {
   transform: scale(1.02) translate(-5px, -11px) !important;
 }
 .land.activeLand:nth-child(5) {
-  transform: scale(1.02) translateX(-2%) translateY(-3%) !important;
+  transform: scale(1.02) translate(-1%, -2%) !important;
 }
 .land.activeLand:nth-child(6) {
-  transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+  transform: scale(1.02) translate(-1%, -2%) !important;
 }
 .land.activeLand:nth-child(7) {
-  transform: scale(1.02) translateX(3%) translateY(-3%) !important;
+  transform: scale(1.02) translateX(-8px) translateY(-20px) !important;
 }
 .land.activeLand:nth-child(8) {
-  transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+  transform: scale(1.02) translate(-1%, -2%) !important;
 }
 .land.activeLand:nth-child(9) {
-  transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+  transform: scale(1.02) translate(-1%, -2%) !important;
 }
 .land.activeLand:nth-child(10) {
   transform: scale(1.2) translate(-66px, -119px) !important;
 }
 .land.activeLand:nth-child(11) {
-  transform: scale(1.02) translateX(-3%) translateY(-3%) !important;
+  transform: scale(1.02) translate(-7px, -14px) !important;
 }
 .land.activeLand:nth-child(12) {
   transform: scale(1.02) translate(-1%, -2%) !important;
@@ -424,4 +446,110 @@ body::-webkit-scrollbar-track {
     width: 100%;
     height: 100%;
   }
+}
+
+foreignObject {
+  overflow: unset !important;
+}
+.city-container {
+  overflow: unset !important;
+}
+.city-name {
+  background: #fff;
+  color: #bb7165;
+  font-size: 16px;
+  width: fit-content;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  padding: 2px 11px;
+  border-radius: 35px;
+  cursor: pointer;
+  font-family: var(--effra-font) !important;
+}
+
+.city-name svg {
+  top: 94%;
+  position: absolute;
+  height: 10.33px;
+  width: 29.22px;
+}
+#map {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+}
+
+#control {
+  direction: rtl;
+  text-align: right;
+  float: right;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: start;
+}
+
+#addplace,
+#editplace,
+#name,
+#x,
+#y,
+#finish,
+#remove {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+#remove {
+  background-color: #ff0000;
+}
+
+#addplace:hover,
+#editplace:hover,
+#finish:hover {
+  background-color: #3e8e41;
+}
+
+#name,
+#x,
+#y {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  color: #000;
+}
+
+#name:focus,
+#x:focus,
+#y:focus {
+  outline: none;
+  border: 2px solid #4caf50;
+}
+
+#adder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#name,
+#x,
+#y {
+  margin-right: 10px;
 }

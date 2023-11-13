@@ -1,0 +1,179 @@
+[33mcommit b5a03335460d5d7b5a1104cb16cd7131fca6d10e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sun Nov 12 11:04:20 2023 +0200
+
+    initial commit
+
+[33mcommit 4714fdad3287993429d67c4b2e5a20841e6ff182[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sun Nov 12 08:01:53 2023 +0200
+
+    ..
+
+[33mcommit 7cf44038d685dee635feaf7c2ba6bbf72e6ca36e[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sun Nov 12 07:49:31 2023 +0200
+
+    whatsapp tasks :)
+
+[33mcommit e4e8189bfa3f14f97466fcdf643172389496b670[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sun Nov 12 07:13:04 2023 +0200
+
+    add dots to the carousel
+
+[33mcommit b26b9267e376197a277b270f64d9f1a8a48d7474[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sun Nov 12 06:48:56 2023 +0200
+
+    ..
+
+[33mcommit 8f73020388e3a4e7f3c2839a85470037edbcb7f7[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sun Nov 12 06:46:06 2023 +0200
+
+    last changes..
+
+[33mcommit 857e8a2f344cc1d7dc05792038c5f7306a640493[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sun Nov 12 06:40:09 2023 +0200
+
+    ..
+
+[33mcommit ea10cf447d678aa88400e842b09d7372fd10d655[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sun Nov 12 06:37:27 2023 +0200
+
+    fix on small screens(mobile) resposive carousel
+
+[33mcommit abe66a2303e0feb3fc24ead99ae693cad021bf8f[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sun Nov 12 06:31:38 2023 +0200
+
+    fix carousel SSR rendering & and styling dissappear & routing bug & resposive design
+
+[33mcommit 218763e5ce8e5c86327071b680adf407b6f2badd[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sun Nov 12 02:09:55 2023 +0200
+
+    resposive mobile screen city page
+
+[33mcommit 836c8d722c16e7d06c8ed0ec541c6ffb8ec5c40d[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sun Nov 12 00:55:19 2023 +0200
+
+    finish V1 with fully resposive
+
+[33mcommit ffe23f7bc273f14f554dc4b92ef11bfd12c1e645[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 22:29:06 2023 +0200
+
+    ..
+
+[33mcommit 958039ac45ef10d875d2911eb07e9faae5aaf3d4[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 22:15:39 2023 +0200
+
+    .
+
+[33mcommit 39d2c4a61a85f671c3eff14e63cd413fdd64b62b[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 21:38:29 2023 +0200
+
+    modified tracks
+
+[33mcommit f25cdc27788ac93f6d0024e538e6d1147a0b517d[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 21:31:46 2023 +0200
+
+    ..
+
+[33mcommit 787f640a26d886fd9972b377629748304e557aa9[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 21:21:07 2023 +0200
+
+    add defs to SVG
+
+[33mcommit 8aa4b3c46736b5139abdc2800f87e90d6b06a8e3[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 16:50:01 2023 +0200
+
+    v0.1
+
+[33mcommit ebad7ddda2912aedaa711e0b89cfba0e13ecea96[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 13:11:59 2023 +0200
+
+    ..
+
+[33mcommit 64923e96b7f974c68e2e8263cbdeffdda9690f81[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 13:02:54 2023 +0200
+
+    remove defs tag
+
+[33mcommit 6cf5eff37fa38a8cbd49ce8e4feec318184c8760[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 12:43:20 2023 +0200
+
+    ..
+
+[33mcommit 7e3fe7114dadd91873f0e92760b88629733323e5[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 12:13:21 2023 +0200
+
+    ..
+
+[33mcommit 99b3261973982b2f19ae5d3bb834883fb8dfcaec[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 11:57:44 2023 +0200
+
+    .
+
+[33mcommit 22232790239bd711736547cc09442103e5dfd8e4[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 11:20:03 2023 +0200
+
+    ..
+
+[33mcommit 165bc36abf13bfd0d133e4dd5c7490a31d708b16[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 11:14:31 2023 +0200
+
+    ..
+
+[33mcommit 3ab893732c78a3222074a62d320e854e73b01e9f[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Sat Nov 11 11:01:47 2023 +0200
+
+    definitions optimization in svg map
+
+[33mcommit c10ac8ac3be314ba7b370ab03ab61cedf0710210[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Fri Nov 10 18:52:56 2023 +0200
+
+    changes on caruosel
+
+[33mcommit f7ae932cca6e30f19207452b77c9f602a55e9266[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Fri Nov 10 18:39:55 2023 +0200
+
+    ..
+
+[33mcommit df9c5928d4c0c1ebcbe7c69a6d38c10450306f75[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Thu Nov 9 17:02:29 2023 +0200
+
+    ..
+
+[33mcommit 1e74f08d8ab4a371062daa15dc6f7f1e2300236b[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Wed Nov 8 22:02:37 2023 +0200
+
+    initial commit
+
+[33mcommit 753c18fd67b4dd09fabdb5d78b7e570d24a76395[m
+Author: safemedigo1 <emarketing.ser@gmail.com>
+Date:   Tue Nov 7 21:02:20 2023 +0200
+
+    Initial commit from Create Next App

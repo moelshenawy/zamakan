@@ -247,6 +247,24 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
+"@ionic/core@7.5.4":
+  version "7.5.4"
+  resolved "https://registry.npmjs.org/@ionic/core/-/core-7.5.4.tgz"
+  integrity sha512-rZbKlcVucRTDOK2Woh4CWPePlsXiUt3G9dCUniduKD7WeiuAk0GzfmoM3WXBvcUpkVTUIOrvKHaqd3JJSWEIzg==
+  dependencies:
+    "@stencil/core" "^4.7.1"
+    ionicons "^7.2.1"
+    tslib "^2.1.0"
+
+"@ionic/react@^7.5.4":
+  version "7.5.4"
+  resolved "https://registry.npmjs.org/@ionic/react/-/react-7.5.4.tgz"
+  integrity sha512-SJ/iHPgHg5FeOka8AzoSWFM1zi923yqTEEqTjAJczjow4V276e3YWy5YoVzPMg+k2ti4YaIJSkUU9hypcwfDMg==
+  dependencies:
+    "@ionic/core" "7.5.4"
+    ionicons "^7.0.0"
+    tslib "*"
+
 "@ionic/utils-array@2.1.6":
   version "2.1.6"
   resolved "https://registry.npmjs.org/@ionic/utils-array/-/utils-array-2.1.6.tgz"
@@ -488,6 +506,11 @@
   version "2.11.8"
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
+
+"@stencil/core@^4.0.3", "@stencil/core@^4.7.1":
+  version "4.7.1"
+  resolved "https://registry.npmjs.org/@stencil/core/-/core-4.7.1.tgz"
+  integrity sha512-KDWA/3qDiABA5LqtHCmTVwORuzgu/YdC0FpSBwVmwlw6K8jUjbTA5JB6Q03da2F+EQlDHOVgbW0TNtHCm54uXQ==
 
 "@swc/helpers@0.5.2":
   version "0.5.2"
@@ -1060,6 +1083,14 @@ encoding@^0.1.12, encoding@^0.1.13:
   dependencies:
     iconv-lite "^0.6.2"
 
+enhanced-resolve@^5.10.0:
+  version "5.15.0"
+  resolved "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.15.0.tgz"
+  integrity sha512-LXYT42KJ7lpIKECr2mAXIaMldcNCh/7E0KBKOu4KSfkHmP+mZmSs+8V5gBAqisWBy0OO4W5Oyys0GO1Y8KtdKg==
+  dependencies:
+    graceful-fs "^4.2.4"
+    tapable "^2.2.0"
+
 env-paths@^2.2.0:
   version "2.2.1"
   resolved "https://registry.npmjs.org/env-paths/-/env-paths-2.2.1.tgz"
@@ -1300,7 +1331,7 @@ globule@^1.0.0:
     lodash "^4.17.21"
     minimatch "~3.0.2"
 
-graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.6:
+graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, graceful-fs@^4.2.6:
   version "4.2.11"
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
@@ -1446,6 +1477,13 @@ ini@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/ini/-/ini-3.0.1.tgz"
   integrity sha512-it4HyVAUTKBc6m8e1iXWvXSTdndF7HbdN713+kvLrymxTaU4AUBWrJ4vEooP+V7fexnVD3LKcBshjGGPefSMUQ==
+
+ionicons@^7.0.0, ionicons@^7.2.1:
+  version "7.2.1"
+  resolved "https://registry.npmjs.org/ionicons/-/ionicons-7.2.1.tgz"
+  integrity sha512-2pvCM7DGVEtbbj48PJzQrCADCQrqjU1nUYX9l9PyEWz3ZfdnLdAouqwPxLdl8tbaF9cE7OZRSlyQD7oLOLnGoQ==
+  dependencies:
+    "@stencil/core" "^4.0.3"
 
 ip@^2.0.0:
   version "2.0.0"
@@ -1860,6 +1898,13 @@ negotiator@^0.6.2, negotiator@^0.6.3:
   version "0.6.3"
   resolved "https://registry.npmjs.org/negotiator/-/negotiator-0.6.3.tgz"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
+
+next-transpile-modules@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.npmjs.org/next-transpile-modules/-/next-transpile-modules-10.0.1.tgz"
+  integrity sha512-4VX/LCMofxIYAVV58UmD+kr8jQflpLWvas/BQ4Co0qWLWzVh06FoZkECkrX5eEZT6oJFqie6+kfbTA3EZCVtdQ==
+  dependencies:
+    enhanced-resolve "^5.10.0"
 
 next@14.0.1:
   version "14.0.1"
@@ -2677,6 +2722,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+tapable@^2.2.0:
+  version "2.2.1"
+  resolved "https://registry.npmjs.org/tapable/-/tapable-2.2.1.tgz"
+  integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
+
 tar@^6.0.2, tar@^6.1.11, tar@^6.1.2:
   version "6.2.0"
   resolved "https://registry.npmjs.org/tar/-/tar-6.2.0.tgz"
@@ -2728,7 +2778,7 @@ trim-newlines@^3.0.0:
   resolved "https://registry.npmjs.org/true-case-path/-/true-case-path-2.2.1.tgz"
   integrity sha512-0z3j8R7MCjy10kc/g+qg7Ln3alJTodw9aDuVWZa3uiWqfuBMKeAeP2ocWcxoyM3D73yz3Jt/Pu4qPr4wHSdB/Q==
 
-tslib@^2.0.1, tslib@^2.1.0, tslib@^2.4.0, tslib@^2.5.0:
+tslib@*, tslib@^2.0.1, tslib@^2.1.0, tslib@^2.4.0, tslib@^2.5.0:
   version "2.6.2"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
