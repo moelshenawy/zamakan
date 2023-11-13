@@ -30,9 +30,6 @@ export default function Home() {
         <LiteraryEras />
         <Poets />
         <PoetryIn />
-        <div className="svg-container">
-          <Svg />
-        </div>
       </main>
     </>
   );

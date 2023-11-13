@@ -30,34 +30,34 @@ const SaudiMap = () => {
       });
     });
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            // Add the "animate" class to the elements when the container is in the viewport
-            elements.forEach((element) => {
-              element.classList.add('animate');
-            });
-          } else {
-            // Remove the "animate" class from the elements when the container is out of the viewport
-            elements.forEach((element) => {
-              element.classList.remove('animate');
-            });
-          }
-        });
-      },
-      {
-        threshold: 0.5, // Trigger animation when 50% of the container is in the viewport
-      }
-    );
+    // const observer = new IntersectionObserver(
+    //   (entries) => {
+    //     entries.forEach((entry) => {
+    //       if (entry.isIntersecting) {
+    //         // Add the "animate" class to the elements when the container is in the viewport
+    //         elements.forEach((element) => {
+    //           element.classList.add('animate');
+    //         });
+    //       } else {
+    //         // Remove the "animate" class from the elements when the container is out of the viewport
+    //         elements.forEach((element) => {
+    //           element.classList.remove('animate');
+    //         });
+    //       }
+    //     });
+    //   },
+    //   {
+    //     threshold: 0.5, // Trigger animation when 50% of the container is in the viewport
+    //   }
+    // );
 
-    // Observe the container
-    observer.observe(container);
+    // // Observe the container
+    // observer.observe(container);
 
-    return () => {
-      // Cleanup when the component unmounts
-      observer.disconnect();
-    };
+    // return () => {
+    // Cleanup when the component unmounts
+    // observer.disconnect();
+    // };
   }, []);
 
 
@@ -130,7 +130,7 @@ const SaudiMap = () => {
   return (
     <>
 
-      <div id='map-boxes' ref={containerRef}>
+      <div id='map-boxes'>
         <TransformWrapper
           ref={transformComponentRef}
           initialScale={1}
@@ -205,7 +205,6 @@ const SaudiMap = () => {
               <TransformComponent>
                 <div id='map'>
                   <Svg />
-
                 </div>
               </TransformComponent>
             </>
