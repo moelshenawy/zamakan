@@ -4,7 +4,7 @@ const Static = () => {
   const staticHTML = `
     <html>
       <head>
-     
+
       </head>
       <body>
         <div id="control">
