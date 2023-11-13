@@ -255,7 +255,7 @@ body::-webkit-scrollbar-track {
   }
 
   #svg1 {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
   }
 }
@@ -613,5 +613,4 @@ foreignObject {
   position: absolute;
   height: 10.33px;
   width: 29.22px;
-  top: 0;
 }
