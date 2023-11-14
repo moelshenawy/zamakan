@@ -5,6 +5,8 @@ import imgs from '../assets/constants/imgs';
 import { Typography } from '@mui/material';
 import Svg from './SVGParts/Svg';
 import { useRouter } from 'next/router';
+import SelectPage from './SelectPage';
+import SelectMap from './SelectMap';
 
 const SaudiMap = () => {
   const { smallMap, SaudiMap } = imgs;
@@ -68,10 +70,12 @@ const SaudiMap = () => {
 
   const [isPointsActive, seIsPointsActive] = useState(false);
 
-
+  const [cityNames, setCityNames] = useState([]);
   useEffect(() => {
     // Select all elements with the class name .land
     const elements = document.querySelectorAll('.land');
+    const city = document.querySelectorAll('.city-name');
+    setCityNames(city)
     setLandElemnts(elements)
 
     // Add dynamic IDs to the selected elements
@@ -126,7 +130,6 @@ const SaudiMap = () => {
 
 
 
-
   return (
     <>
 
@@ -160,16 +163,12 @@ const SaudiMap = () => {
                     element.classList.remove('activeLand', 'hiddenPoints');
                   });
 
-                  // setActiveLand(null)
-                  // seIsPointsActive(false)
 
-                  // if (activeLand) activeLand.classList.remove('activeLand');
-                  // if (activeLand) activeLand.classList.remove('hiddenPoints');
 
                 }}>Reset</button>
 
 
-                <div className={`box ${activeIndex === null ? 'active' : ''}`} onClick={() => {
+                <div className={`select-box  ${activeIndex === null ? 'active' : ''}`} onClick={() => {
 
                   resetTransform();
                   setActiveIndex(null);
@@ -190,7 +189,7 @@ const SaudiMap = () => {
 
                 {Array.from({ length: landElments.length }).map((_, index) => (
 
-                  <div className={`box ${index === activeIndex ? 'active' : ''}`} key={index} onClick={() => handleZoomToLand(index)}>
+                  <div className={`select-box ${index === activeIndex ? 'active' : ''}`} key={index} onClick={() => handleZoomToLand(index)}>
                     <div className={"img_container"}>
                       <img src={smallMap.src} alt="الرياض" />
                     </div>
@@ -200,6 +199,13 @@ const SaudiMap = () => {
                   </div>
 
                 ))}
+
+
+
+                <div className="select_container">
+                  {/* <SelectMap cityNames={cityNames} activeIndex={activeIndex} /> */}
+                </div>
+
               </div>
 
               <TransformComponent>
