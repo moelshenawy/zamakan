@@ -22,7 +22,7 @@ const Svg = () => {
       } else if (viewportWidth <= 1200) {
         setViewBox("0 0 858 724"); // for medium screens
       } else {
-        setViewBox("-170 70 840 624"); // for large screens
+        setViewBox("0 0 858 724"); // for large screens
       }
     };
 
@@ -40,7 +40,7 @@ const Svg = () => {
   return (
     <>
       <xml version="1.0" encoding="UTF-8" standalone="no" />
-      <svg id="svg1" width="858" height="724" fill="none" xmlns="http://www.w3.org/2000/svg" class="saudi-map" viewBox={viewBox} >
+      <svg id="svg1" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg" class="saudi-map" viewBox="90 90 758 624" >
         <GElements />
       </svg>
 
